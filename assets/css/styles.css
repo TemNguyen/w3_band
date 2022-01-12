@@ -5,44 +5,91 @@
     box-sizing: border-box;
 }
 
-#main {
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+1. Từ ngoài vào trong
+2. Từ trên xuống dưới
+3. Từ bao quát tới chi tiết
+*/
+
+/* 
+1. Vị trí
+2. Kích thước
+3. Màu sắc
+4. Kiểu dáng
+*/
+
+#main{
 
 }
 
-#header {
-    height: 46.5px;
+#header{
+    height: 46px;
     background-color: #000;
+}
+
+#nav, .subnav{
+    list-style: none;
 }
 
 #nav li {
     display: inline-block;
+    position: relative;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav li:hover .subnav {
+    display: block;
 }
 
 #nav .subnav {
     display: none;
+    position: absolute;
+    min-width: 160px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-#nav li a {
-    color: #fff;
-    text-decoration: none;
-    line-height: 46.5px;
-    padding: 0 24px;
-    display: inline-block;
-}
-
-#nav li:hover a {
+#nav .subnav a {
     color: #000;
-    background-color: #ccc;
+    padding: 0 16px;
+    line-height: 38px;
+}
+
+#nav .subnav li {
+    display: block;
 }
 
 #slider{
 
 }
 
-#content {
+#content{
 
 }
 
-#footer {
+#footer{
 
 }
+
+
