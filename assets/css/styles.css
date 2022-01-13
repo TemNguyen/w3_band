@@ -16,14 +16,14 @@ html {
 #header{
     background-color: #000;
     height: 46px;
-}
-
-#navbar{
-    display: inline-block;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+}
+
+#navbar{
+    display: inline-block;
 }
 
 #navbar > li {
@@ -94,7 +94,7 @@ html {
 }
 
 #slider{
-    
+    margin-top: 46px;
 }
 
 #content{
