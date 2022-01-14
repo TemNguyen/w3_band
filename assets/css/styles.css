@@ -1,4 +1,5 @@
 /* Reset CSS */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,95 +10,115 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#main{
+#main {
 
 }
 
-#header{
+#header {
     background-color: #000;
     height: 46px;
     position: fixed;
+    z-index: 1;
+    width: 100%;
     top: 0;
-    left: 0;
-    right: 0;
 }
 
-#navbar{
+#nav {
     display: inline-block;
 }
 
-#navbar > li {
+#nav li {
     display: inline-block;
     position: relative;
 }
 
-#navbar > li:hover > a,
-#navbar .subnav li:hover a {
-    background-color: #ccc;
+#nav > li:hover > a,
+#nav .subnav li:hover a {
     color: #000;
+    background-color: #ccc;
 }
 
-#navbar > li > a {
+#nav > li > a {
     color: #fff;
     text-transform: uppercase;
 }
 
-#navbar li a {
-    line-height: 46px;
-    padding: 0 24px;
+#nav li a {
     text-decoration: none;
+    padding: 0 24px;
+    line-height: 46px;
     display: inline-block;
 }
 
-#navbar li:hover .subnav {
+#nav li:hover .subnav {
     display: block;
 }
 
-#navbar .subnav {
+#nav .subnav {
     display: none;
     position: absolute;
     background-color: #fff;
-    color: #000;
-}
-
-#navbar .subnav {
-    list-style-type: none;
-    min-width: 160px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    min-width: 160px;
 }
 
-#navbar .subnav li a {
+#nav .subnav li {
     display: block;
-    line-height: 38px;
-    padding: 0 16px;
+
 }
 
-#navbar .down-arrow-icon {
-    font-size: 13px;
+#nav .subnav li a {
+    display: block;
+    line-height: 36px;
+    padding: 0 8px;
 }
 
-.search-button:hover {
+#nav .nav-down-icon {
+    font-size: 14px;
+}
+
+.search-btn:hover {
     background-color: #f44336;
     cursor: pointer;
 }
 
-.search-button {
+.search-btn {
     float: right;
     line-height: 46px;
     padding: 0 24px;
-
-}
+}   
 
 .search-icon {
     color: #fff;
-    
+    font-size: 20px;
+
 }
 
-#slider{
+#slider {
+    padding-top: 50%;
     margin-top: 46px;
+    background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+    position: relative;
 }
 
-#content{
+#slider .text-content {
+    position: absolute;
+    bottom: 32px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+}
+
+#slider .text-description {
+    padding-top: 35px;
+}
+
+
+#content {
 
 }
 
