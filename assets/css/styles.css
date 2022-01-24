@@ -80,6 +80,10 @@ html {
     margin-top: 16px !important;
 }
 
+.mt-32 {
+    margin-top: 32px !important;
+}
+
 #main {
 
 }
@@ -95,6 +99,7 @@ html {
 
 #nav {
     display: inline-block;
+    width: auto;
 }
 
 #nav li {
@@ -152,15 +157,37 @@ html {
     cursor: pointer;
 }
 
-.search-btn {
+.menu-btn:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.menu-btn:hover .menu-icon {
+    background-color: #000;
+}
+
+.search-btn,
+.menu-btn {
     float: right;
     line-height: 46px;
     padding: 0 24px;
-}   
+    position: absolute;
+    top: 0;
+    right: 0;
+}  
 
-.search-icon {
+.menu-btn {
+    display: none;
+}
+
+.search-icon,
+.menu-icon {
     color: #fff;
     font-size: 20px;
+
+}
+
+.menu-btn {
 
 }
 
@@ -194,9 +221,10 @@ html {
 
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 64px 0 112px;
+    padding: 64px 8px 112px;
 }
 
 #content .heading-section {
@@ -219,6 +247,10 @@ html {
     text-align: justify;
     margin-top: 30px;
     line-height: 1.4;
+}
+
+#content .members-list {
+    margin-top: 16px;
 }
 
 #content .member-name {
@@ -267,7 +299,7 @@ html {
 }
 
 .place-list {
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .place-img {
