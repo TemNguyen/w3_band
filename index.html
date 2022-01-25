@@ -251,11 +251,12 @@
 
         var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
         
-        menuItems.forEach(element => {
-            
-            element.addEventListener('click', function(){
+        menuItems.forEach(element => { 
+            element.addEventListener('click', function(e){
                 var isParentMenu = this.nextElementSibling && element.nextElementSibling.classList.contains('subnav');               
-                if(!isParentMenu){
+                if(isParentMenu){
+                    e.preventDefault();
+                } else {
                     header.style.height = null;
                 }
             });
